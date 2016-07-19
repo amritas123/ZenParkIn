@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BE821C61D3DCE1500BC6E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821C51D3DCE1500BC6E15 /* AppDelegate.swift */; };
+		2BE821C81D3DCE1500BC6E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821C71D3DCE1500BC6E15 /* ViewController.swift */; };
+		2BE821CB1D3DCE1500BC6E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE821C91D3DCE1500BC6E15 /* Main.storyboard */; };
+		2BE821CD1D3DCE1500BC6E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE821CC1D3DCE1500BC6E15 /* Assets.xcassets */; };
+		2BE821D01D3DCE1500BC6E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE821CE1D3DCE1500BC6E15 /* LaunchScreen.storyboard */; };
+		2BE821DB1D3DCE1500BC6E15 /* ZenParkInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821DA1D3DCE1500BC6E15 /* ZenParkInTests.swift */; };
+		2BE821E61D3DCE1500BC6E15 /* ZenParkInUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821E51D3DCE1500BC6E15 /* ZenParkInUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BE821D71D3DCE1500BC6E15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE821BA1D3DCE1500BC6E15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BE821C11D3DCE1500BC6E15;
+			remoteInfo = ZenParkIn;
+		};
+		2BE821E21D3DCE1500BC6E15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE821BA1D3DCE1500BC6E15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BE821C11D3DCE1500BC6E15;
+			remoteInfo = ZenParkIn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BE821C21D3DCE1500BC6E15 /* ZenParkIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenParkIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE821C51D3DCE1500BC6E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BE821C71D3DCE1500BC6E15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BE821CA1D3DCE1500BC6E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BE821CC1D3DCE1500BC6E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BE821CF1D3DCE1500BC6E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BE821D11D3DCE1500BC6E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE821D61D3DCE1500BC6E15 /* ZenParkInTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenParkInTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE821DA1D3DCE1500BC6E15 /* ZenParkInTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenParkInTests.swift; sourceTree = "<group>"; };
+		2BE821DC1D3DCE1500BC6E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE821E11D3DCE1500BC6E15 /* ZenParkInUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenParkInUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE821E51D3DCE1500BC6E15 /* ZenParkInUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenParkInUITests.swift; sourceTree = "<group>"; };
+		2BE821E71D3DCE1500BC6E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BE821BF1D3DCE1500BC6E15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE821D31D3DCE1500BC6E15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE821DE1D3DCE1500BC6E15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BE821B91D3DCE1500BC6E15 = {
+			isa = PBXGroup;
+			children = (
+				2BE821C41D3DCE1500BC6E15 /* ZenParkIn */,
+				2BE821D91D3DCE1500BC6E15 /* ZenParkInTests */,
+				2BE821E41D3DCE1500BC6E15 /* ZenParkInUITests */,
+				2BE821C31D3DCE1500BC6E15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BE821C31D3DCE1500BC6E15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BE821C21D3DCE1500BC6E15 /* ZenParkIn.app */,
+				2BE821D61D3DCE1500BC6E15 /* ZenParkInTests.xctest */,
+				2BE821E11D3DCE1500BC6E15 /* ZenParkInUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BE821C41D3DCE1500BC6E15 /* ZenParkIn */ = {
+			isa = PBXGroup;
+			children = (
+				2BE821C51D3DCE1500BC6E15 /* AppDelegate.swift */,
+				2BE821C71D3DCE1500BC6E15 /* ViewController.swift */,
+				2BE821C91D3DCE1500BC6E15 /* Main.storyboard */,
+				2BE821CC1D3DCE1500BC6E15 /* Assets.xcassets */,
+				2BE821CE1D3DCE1500BC6E15 /* LaunchScreen.storyboard */,
+				2BE821D11D3DCE1500BC6E15 /* Info.plist */,
+			);
+			path = ZenParkIn;
+			sourceTree = "<group>";
+		};
+		2BE821D91D3DCE1500BC6E15 /* ZenParkInTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BE821DA1D3DCE1500BC6E15 /* ZenParkInTests.swift */,
+				2BE821DC1D3DCE1500BC6E15 /* Info.plist */,
+			);
+			path = ZenParkInTests;
+			sourceTree = "<group>";
+		};
+		2BE821E41D3DCE1500BC6E15 /* ZenParkInUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BE821E51D3DCE1500BC6E15 /* ZenParkInUITests.swift */,
+				2BE821E71D3DCE1500BC6E15 /* Info.plist */,
+			);
+			path = ZenParkInUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BE821C11D3DCE1500BC6E15 /* ZenParkIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BE821EA1D3DCE1500BC6E15 /* Build configuration list for PBXNativeTarget "ZenParkIn" */;
+			buildPhases = (
+				2BE821BE1D3DCE1500BC6E15 /* Sources */,
+				2BE821BF1D3DCE1500BC6E15 /* Frameworks */,
+				2BE821C01D3DCE1500BC6E15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZenParkIn;
+			productName = ZenParkIn;
+			productReference = 2BE821C21D3DCE1500BC6E15 /* ZenParkIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BE821D51D3DCE1500BC6E15 /* ZenParkInTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BE821ED1D3DCE1500BC6E15 /* Build configuration list for PBXNativeTarget "ZenParkInTests" */;
+			buildPhases = (
+				2BE821D21D3DCE1500BC6E15 /* Sources */,
+				2BE821D31D3DCE1500BC6E15 /* Frameworks */,
+				2BE821D41D3DCE1500BC6E15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BE821D81D3DCE1500BC6E15 /* PBXTargetDependency */,
+			);
+			name = ZenParkInTests;
+			productName = ZenParkInTests;
+			productReference = 2BE821D61D3DCE1500BC6E15 /* ZenParkInTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BE821E01D3DCE1500BC6E15 /* ZenParkInUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BE821F01D3DCE1500BC6E15 /* Build configuration list for PBXNativeTarget "ZenParkInUITests" */;
+			buildPhases = (
+				2BE821DD1D3DCE1500BC6E15 /* Sources */,
+				2BE821DE1D3DCE1500BC6E15 /* Frameworks */,
+				2BE821DF1D3DCE1500BC6E15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BE821E31D3DCE1500BC6E15 /* PBXTargetDependency */,
+			);
+			name = ZenParkInUITests;
+			productName = ZenParkInUITests;
+			productReference = 2BE821E11D3DCE1500BC6E15 /* ZenParkInUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BE821BA1D3DCE1500BC6E15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ZenParkIn;
+				TargetAttributes = {
+					2BE821C11D3DCE1500BC6E15 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3TQE78SZ57;
+					};
+					2BE821D51D3DCE1500BC6E15 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3TQE78SZ57;
+						TestTargetID = 2BE821C11D3DCE1500BC6E15;
+					};
+					2BE821E01D3DCE1500BC6E15 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3TQE78SZ57;
+						TestTargetID = 2BE821C11D3DCE1500BC6E15;
+					};
+				};
+			};
+			buildConfigurationList = 2BE821BD1D3DCE1500BC6E15 /* Build configuration list for PBXProject "ZenParkIn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BE821B91D3DCE1500BC6E15;
+			productRefGroup = 2BE821C31D3DCE1500BC6E15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BE821C11D3DCE1500BC6E15 /* ZenParkIn */,
+				2BE821D51D3DCE1500BC6E15 /* ZenParkInTests */,
+				2BE821E01D3DCE1500BC6E15 /* ZenParkInUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BE821C01D3DCE1500BC6E15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE821D01D3DCE1500BC6E15 /* LaunchScreen.storyboard in Resources */,
+				2BE821CD1D3DCE1500BC6E15 /* Assets.xcassets in Resources */,
+				2BE821CB1D3DCE1500BC6E15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE821D41D3DCE1500BC6E15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE821DF1D3DCE1500BC6E15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BE821BE1D3DCE1500BC6E15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE821C81D3DCE1500BC6E15 /* ViewController.swift in Sources */,
+				2BE821C61D3DCE1500BC6E15 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE821D21D3DCE1500BC6E15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE821DB1D3DCE1500BC6E15 /* ZenParkInTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE821DD1D3DCE1500BC6E15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE821E61D3DCE1500BC6E15 /* ZenParkInUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BE821D81D3DCE1500BC6E15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BE821C11D3DCE1500BC6E15 /* ZenParkIn */;
+			targetProxy = 2BE821D71D3DCE1500BC6E15 /* PBXContainerItemProxy */;
+		};
+		2BE821E31D3DCE1500BC6E15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BE821C11D3DCE1500BC6E15 /* ZenParkIn */;
+			targetProxy = 2BE821E21D3DCE1500BC6E15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BE821C91D3DCE1500BC6E15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BE821CA1D3DCE1500BC6E15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BE821CE1D3DCE1500BC6E15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BE821CF1D3DCE1500BC6E15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BE821E81D3DCE1500BC6E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BE821E91D3DCE1500BC6E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BE821EB1D3DCE1500BC6E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZenParkIn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2BE821EC1D3DCE1500BC6E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZenParkIn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2BE821EE1D3DCE1500BC6E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZenParkInTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZenParkIn.app/ZenParkIn";
+			};
+			name = Debug;
+		};
+		2BE821EF1D3DCE1500BC6E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZenParkInTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZenParkIn.app/ZenParkIn";
+			};
+			name = Release;
+		};
+		2BE821F11D3DCE1500BC6E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZenParkInUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZenParkIn;
+			};
+			name = Debug;
+		};
+		2BE821F21D3DCE1500BC6E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZenParkInUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZenParkIn;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BE821BD1D3DCE1500BC6E15 /* Build configuration list for PBXProject "ZenParkIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BE821E81D3DCE1500BC6E15 /* Debug */,
+				2BE821E91D3DCE1500BC6E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BE821EA1D3DCE1500BC6E15 /* Build configuration list for PBXNativeTarget "ZenParkIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BE821EB1D3DCE1500BC6E15 /* Debug */,
+				2BE821EC1D3DCE1500BC6E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BE821ED1D3DCE1500BC6E15 /* Build configuration list for PBXNativeTarget "ZenParkInTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BE821EE1D3DCE1500BC6E15 /* Debug */,
+				2BE821EF1D3DCE1500BC6E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BE821F01D3DCE1500BC6E15 /* Build configuration list for PBXNativeTarget "ZenParkInUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BE821F11D3DCE1500BC6E15 /* Debug */,
+				2BE821F21D3DCE1500BC6E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BE821BA1D3DCE1500BC6E15 /* Project object */;
+}
