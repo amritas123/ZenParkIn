@@ -1,13 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f2y-HO-MlE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Location Search Table-->
+        <scene sceneID="Plc-Wr-Yw9">
+            <objects>
+                <tableViewController storyboardIdentifier="LocationSearchTable" id="ELH-UI-YAx" customClass="LocationSearchTable" customModule="ZenParkIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="x8w-NO-OU9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="ixt-jj-K0R" detailTextLabel="Szj-C2-jPp" style="IBUITableViewCellStyleSubtitle" id="VgC-0j-rR8">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VgC-0j-rR8" id="Snj-Qb-oTc">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ixt-jj-K0R">
+                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Szj-C2-jPp">
+                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ELH-UI-YAx" id="82i-si-kJF"/>
+                            <outlet property="delegate" destination="ELH-UI-YAx" id="3gV-Po-zry"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kzf-nO-SQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1275" y="123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7lp-hd-Ncg">
+            <objects>
+                <navigationController id="f2y-HO-MlE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i4T-4n-9gH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u0J-cQ-N4V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUy-le-a5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-557" y="345"/>
+        </scene>
+        <!--ZenParkIn-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZenParkIn" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +77,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hhk-y2-Uvp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="587"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ExZ-Yh-zXf"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Hhk-y2-Uvp" secondAttribute="bottom" constant="-13" id="5hA-oK-aqt"/>
+                            <constraint firstAttribute="trailing" secondItem="Hhk-y2-Uvp" secondAttribute="trailing" id="Bc7-7Z-fvT"/>
+                            <constraint firstAttribute="bottom" secondItem="Hhk-y2-Uvp" secondAttribute="bottom" constant="13" id="FEM-Z4-TsG"/>
+                            <constraint firstItem="Hhk-y2-Uvp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xh6-dh-uE9"/>
+                            <constraint firstAttribute="trailing" secondItem="Hhk-y2-Uvp" secondAttribute="trailing" id="ig6-Zg-IGW"/>
+                            <constraint firstItem="Hhk-y2-Uvp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ikY-ps-Ptx"/>
+                            <constraint firstItem="Hhk-y2-Uvp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xIE-CF-Zkz"/>
+                            <constraint firstItem="Hhk-y2-Uvp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zez-Uu-ZO4"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="ZenParkIn" id="hvv-G3-dRw"/>
+                    <connections>
+                        <outlet property="mapView" destination="Hhk-y2-Uvp" id="9ID-uc-BzR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="9of-b0-SI2">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="ryY-iA-a0S"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="bRW-Qy-XTY"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="f5n-br-Z24"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="nwO-wc-tXU"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
+            <point key="canvasLocation" x="330" y="345"/>
         </scene>
     </scenes>
 </document>

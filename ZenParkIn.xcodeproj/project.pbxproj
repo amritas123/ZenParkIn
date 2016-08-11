@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BB4C3081D483E9200B2F636 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4C3071D483E9200B2F636 /* LocationSearchTable.swift */; };
 		2BE821C61D3DCE1500BC6E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821C51D3DCE1500BC6E15 /* AppDelegate.swift */; };
 		2BE821C81D3DCE1500BC6E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821C71D3DCE1500BC6E15 /* ViewController.swift */; };
 		2BE821CB1D3DCE1500BC6E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE821C91D3DCE1500BC6E15 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		2BE821D01D3DCE1500BC6E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE821CE1D3DCE1500BC6E15 /* LaunchScreen.storyboard */; };
 		2BE821DB1D3DCE1500BC6E15 /* ZenParkInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821DA1D3DCE1500BC6E15 /* ZenParkInTests.swift */; };
 		2BE821E61D3DCE1500BC6E15 /* ZenParkInUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821E51D3DCE1500BC6E15 /* ZenParkInUITests.swift */; };
+		2BE821F51D3DD2B900BC6E15 /* PublicParkingData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BE821F41D3DD2B900BC6E15 /* PublicParkingData.json */; };
+		2BE821F71D3DD39000BC6E15 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821F61D3DD39000BC6E15 /* Parking.swift */; };
+		2BE821F91D3DD62000BC6E15 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821F81D3DD62000BC6E15 /* VCMapView.swift */; };
+		2BE821FD1D3DE00200BC6E15 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821FC1D3DE00200BC6E15 /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BB4C3071D483E9200B2F636 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		2BE821C21D3DCE1500BC6E15 /* ZenParkIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenParkIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE821C51D3DCE1500BC6E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE821C71D3DCE1500BC6E15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,10 @@
 		2BE821E11D3DCE1500BC6E15 /* ZenParkInUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenParkInUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE821E51D3DCE1500BC6E15 /* ZenParkInUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenParkInUITests.swift; sourceTree = "<group>"; };
 		2BE821E71D3DCE1500BC6E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE821F41D3DD2B900BC6E15 /* PublicParkingData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicParkingData.json; sourceTree = "<group>"; };
+		2BE821F61D3DD39000BC6E15 /* Parking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
+		2BE821F81D3DD62000BC6E15 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		2BE821FC1D3DE00200BC6E15 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,16 @@
 		2BE821C41D3DCE1500BC6E15 /* ZenParkIn */ = {
 			isa = PBXGroup;
 			children = (
+				2BE821F31D3DD20D00BC6E15 /* Supporting Files */,
 				2BE821C51D3DCE1500BC6E15 /* AppDelegate.swift */,
 				2BE821C71D3DCE1500BC6E15 /* ViewController.swift */,
 				2BE821C91D3DCE1500BC6E15 /* Main.storyboard */,
 				2BE821CC1D3DCE1500BC6E15 /* Assets.xcassets */,
 				2BE821CE1D3DCE1500BC6E15 /* LaunchScreen.storyboard */,
 				2BE821D11D3DCE1500BC6E15 /* Info.plist */,
+				2BE821F61D3DD39000BC6E15 /* Parking.swift */,
+				2BE821F81D3DD62000BC6E15 /* VCMapView.swift */,
+				2BB4C3071D483E9200B2F636 /* LocationSearchTable.swift */,
 			);
 			path = ZenParkIn;
 			sourceTree = "<group>";
@@ -123,6 +137,15 @@
 				2BE821E71D3DCE1500BC6E15 /* Info.plist */,
 			);
 			path = ZenParkInUITests;
+			sourceTree = "<group>";
+		};
+		2BE821F31D3DD20D00BC6E15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BE821FC1D3DE00200BC6E15 /* JSON.swift */,
+				2BE821F41D3DD2B900BC6E15 /* PublicParkingData.json */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +258,7 @@
 				2BE821D01D3DCE1500BC6E15 /* LaunchScreen.storyboard in Resources */,
 				2BE821CD1D3DCE1500BC6E15 /* Assets.xcassets in Resources */,
 				2BE821CB1D3DCE1500BC6E15 /* Main.storyboard in Resources */,
+				2BE821F51D3DD2B900BC6E15 /* PublicParkingData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE821F91D3DD62000BC6E15 /* VCMapView.swift in Sources */,
+				2BE821FD1D3DE00200BC6E15 /* JSON.swift in Sources */,
 				2BE821C81D3DCE1500BC6E15 /* ViewController.swift in Sources */,
+				2BB4C3081D483E9200B2F636 /* LocationSearchTable.swift in Sources */,
+				2BE821F71D3DD39000BC6E15 /* Parking.swift in Sources */,
 				2BE821C61D3DCE1500BC6E15 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +515,7 @@
 				2BE821EC1D3DCE1500BC6E15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BE821ED1D3DCE1500BC6E15 /* Build configuration list for PBXNativeTarget "ZenParkInTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +524,7 @@
 				2BE821EF1D3DCE1500BC6E15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BE821F01D3DCE1500BC6E15 /* Build configuration list for PBXNativeTarget "ZenParkInUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +533,7 @@
 				2BE821F21D3DCE1500BC6E15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
