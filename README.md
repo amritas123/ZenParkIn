@@ -9,12 +9,12 @@ Sample IOS App Tutorial referred in this app.
 3. https://www.raywenderlich.com/90971/introduction-mapkit-swift-tutorial
 
 
-Some additional commands used during setup.
+#Some additional commands used during setup.
 
-Install libyaml
-brew uninstall libyaml
-rvm autolibs enable
-rvm reinstall ruby-2.1.1
+* Install libyaml
+* brew uninstall libyaml
+* rvm autolibs enable
+* rvm reinstall ruby-2.1.1
 
-pod init HelloMap.xcodeproj
-pod install
+* pod init HelloMap.xcodeproj
+* pod install
