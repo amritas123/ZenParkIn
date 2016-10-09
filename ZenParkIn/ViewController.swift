@@ -41,7 +41,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
         
         // search location
         searchLocation()
-        addBoundry(parkings)
+        //addBoundry(parkings)
         
     }
     
@@ -121,6 +121,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
     
     // location manager to authorize user location for Maps app
     func checkLocationAuthorizationStatus() {
+        print("Inside checkLocationAuthorizationStatus")
         if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
             mapView.showsUserLocation = true
         } else {
