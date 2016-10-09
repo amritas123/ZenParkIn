@@ -1,6 +1,6 @@
 # ZenParkIn
 
-Sample IOS App Tutorial referred to in the app.
+Sample IOS App Tutorial referred in this app.
 
 1. http://www.thorntech.com/2016/01/how-to-search-for-location-using-apples-mapkit/
 
