@@ -56,14 +56,13 @@ class ViewController: UIViewController, UISearchBarDelegate {
         mapView.addOverlay(polygon)
     }
     
-    func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
-        if overlay is MKPolygon {
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+        
             let polygonView = MKPolygonRenderer(overlay: overlay)
             polygonView.strokeColor = UIColor.lightGrayColor()
             
             return polygonView
-        }
-        return nil
+        
     }
     
     
