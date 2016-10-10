@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B8E62DC1DAB608F00DA99AA /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8E62DB1DAB608F00DA99AA /* Contacts.framework */; };
+		2B8E62DE1DAB609600DA99AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8E62DD1DAB609600DA99AA /* MapKit.framework */; };
 		2BB4C3081D483E9200B2F636 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4C3071D483E9200B2F636 /* LocationSearchTable.swift */; };
 		2BE821C61D3DCE1500BC6E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821C51D3DCE1500BC6E15 /* AppDelegate.swift */; };
 		2BE821C81D3DCE1500BC6E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE821C71D3DCE1500BC6E15 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B8E62DB1DAB608F00DA99AA /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		2B8E62DD1DAB609600DA99AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2BB4C3071D483E9200B2F636 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		2BE821C21D3DCE1500BC6E15 /* ZenParkIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenParkIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE821C51D3DCE1500BC6E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B8E62DE1DAB609600DA99AA /* MapKit.framework in Frameworks */,
+				2B8E62DC1DAB608F00DA99AA /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +93,8 @@
 		2BE821B91D3DCE1500BC6E15 = {
 			isa = PBXGroup;
 			children = (
+				2B8E62DD1DAB609600DA99AA /* MapKit.framework */,
+				2B8E62DB1DAB608F00DA99AA /* Contacts.framework */,
 				2BE821C41D3DCE1500BC6E15 /* ZenParkIn */,
 				2BE821D91D3DCE1500BC6E15 /* ZenParkInTests */,
 				2BE821E41D3DCE1500BC6E15 /* ZenParkInUITests */,
