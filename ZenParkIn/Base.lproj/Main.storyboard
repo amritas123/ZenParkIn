@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -82,23 +81,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hhk-y2-Uvp">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="587"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ExZ-Yh-zXf"/>
-                                </connections>
-                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eCQ-ph-o5m">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hhk-y2-Uvp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="ExZ-Yh-zXf"/>
+                                        </connections>
+                                    </mapView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="Hhk-y2-Uvp" secondAttribute="bottom" constant="-13" id="5hA-oK-aqt"/>
-                            <constraint firstAttribute="trailing" secondItem="Hhk-y2-Uvp" secondAttribute="trailing" id="Bc7-7Z-fvT"/>
-                            <constraint firstAttribute="bottom" secondItem="Hhk-y2-Uvp" secondAttribute="bottom" constant="13" id="FEM-Z4-TsG"/>
-                            <constraint firstItem="Hhk-y2-Uvp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xh6-dh-uE9"/>
-                            <constraint firstAttribute="trailing" secondItem="Hhk-y2-Uvp" secondAttribute="trailing" id="ig6-Zg-IGW"/>
-                            <constraint firstItem="Hhk-y2-Uvp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ikY-ps-Ptx"/>
-                            <constraint firstItem="Hhk-y2-Uvp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xIE-CF-Zkz"/>
-                            <constraint firstItem="Hhk-y2-Uvp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zez-Uu-ZO4"/>
+                            <constraint firstItem="eCQ-ph-o5m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HjZ-gd-55K"/>
+                            <constraint firstAttribute="trailing" secondItem="eCQ-ph-o5m" secondAttribute="trailing" id="I1h-oJ-cVl"/>
+                            <constraint firstItem="eCQ-ph-o5m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kzd-8Z-BiL"/>
+                            <constraint firstItem="eCQ-ph-o5m" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="pFI-57-ydi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ZenParkIn" id="hvv-G3-dRw"/>
@@ -116,7 +116,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="330" y="345"/>
+            <point key="canvasLocation" x="328.80000000000001" y="344.97751124437787"/>
         </scene>
     </scenes>
 </document>
