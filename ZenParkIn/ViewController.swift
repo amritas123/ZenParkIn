@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 protocol HandleMapSearch {
-    func dropPinZoomIn(placemark:MKPlacemark)
+    func dropPinZoomIn(_ placemark:MKPlacemark)
 }
 
 class ViewController: UIViewController, UISearchBarDelegate {
@@ -45,7 +45,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
         
     }
     
-    func addBoundry(parkings: [Parking])
+    func addBoundry(_ parkings: [Parking])
     {
         print("Inside addBoundry")
         var points = [CLLocationCoordinate2D]()
@@ -53,13 +53,13 @@ class ViewController: UIViewController, UISearchBarDelegate {
             points.append(parkingData.coordinate)
         }
         let polygon = MKPolygon(coordinates: &points, count: points.count)
-        mapView.addOverlay(polygon)
+        mapView.add(polygon)
     }
     
-    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         
             let polygonView = MKPolygonRenderer(overlay: overlay)
-            polygonView.strokeColor = UIColor.lightGrayColor()
+            polygonView.strokeColor = UIColor.lightGray
             
             return polygonView
         
@@ -68,7 +68,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
     
     func searchLocation() {
         print("Inside searchLocation")
-        let locationSearchTable = storyboard!.instantiateViewControllerWithIdentifier("LocationSearchTable") as! LocationSearchTable
+        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
         resultSearchController = UISearchController(searchResultsController: locationSearchTable)
         resultSearchController?.searchResultsUpdater = locationSearchTable
         
@@ -88,18 +88,18 @@ class ViewController: UIViewController, UISearchBarDelegate {
     func loadInitialData() {
         print("Inside loadInitialData")
         // 1
-        let fileName = NSBundle.mainBundle().pathForResource("PublicParkingData", ofType: "json");
-        var data: NSData?
+        let fileName = Bundle.main.path(forResource: "PublicParkingData", ofType: "json");
+        var data: Data?
         do {
-            data = try NSData(contentsOfFile: fileName!, options: NSDataReadingOptions(rawValue: 0))
+            data = try Data(contentsOf: URL(fileURLWithPath: fileName!), options: NSData.ReadingOptions(rawValue: 0))
         } catch _ {
             data = nil
         }
         
         // 2
-        let jsonObject: AnyObject!
+        let jsonObject: Any!
         do {
-            jsonObject = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0))
+            jsonObject = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions(rawValue: 0))
         } catch _ {
             jsonObject = nil
         }
@@ -107,11 +107,11 @@ class ViewController: UIViewController, UISearchBarDelegate {
         // 3
         if let jsonObject = jsonObject as? [String: AnyObject],
             // 4
-            let jsonData = JSONValue.fromObject(jsonObject)?["data"]?.array {
+            let jsonData = JSONValue.fromObject(jsonObject as AnyObject)?["data"]?.array {
             for parkingJSON in jsonData {
                 if let parkingJSON = parkingJSON.array,
                     // 5
-                    parking = Parking.fromJSON(parkingJSON) {
+                    let parking = Parking.fromJSON(parkingJSON) {
                     parkings.append(parking)
                 }
             }
@@ -121,14 +121,14 @@ class ViewController: UIViewController, UISearchBarDelegate {
     // location manager to authorize user location for Maps app
     func checkLocationAuthorizationStatus() {
         print("Inside checkLocationAuthorizationStatus")
-        if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             mapView.showsUserLocation = true
         } else {
             locationManager.requestWhenInUseAuthorization()
         }
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         checkLocationAuthorizationStatus()
     }
@@ -136,13 +136,13 @@ class ViewController: UIViewController, UISearchBarDelegate {
 }
 
 extension ViewController : CLLocationManagerDelegate {
-    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        if status == .AuthorizedWhenInUse {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
             locationManager.requestLocation()
         }
     }
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             let span = MKCoordinateSpanMake(0.006, 0.006)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
@@ -150,13 +150,13 @@ extension ViewController : CLLocationManagerDelegate {
         }
     }
     
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("error:: \(error)")
     }
 }
 
 extension ViewController: HandleMapSearch {
-    func dropPinZoomIn(placemark:MKPlacemark){
+    func dropPinZoomIn(_ placemark:MKPlacemark){
         // cache the pin
         selectedPin = placemark
         // clear existing pins

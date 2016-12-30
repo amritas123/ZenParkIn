@@ -225,15 +225,18 @@
 					2BE821C11D3DCE1500BC6E15 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 3TQE78SZ57;
+						LastSwiftMigration = 0820;
 					};
 					2BE821D51D3DCE1500BC6E15 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 3TQE78SZ57;
+						LastSwiftMigration = 0820;
 						TestTargetID = 2BE821C11D3DCE1500BC6E15;
 					};
 					2BE821E01D3DCE1500BC6E15 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 3TQE78SZ57;
+						LastSwiftMigration = 0820;
 						TestTargetID = 2BE821C11D3DCE1500BC6E15;
 					};
 				};
@@ -444,6 +447,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -455,6 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -466,6 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkInTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZenParkIn.app/ZenParkIn";
 			};
 			name = Debug;
@@ -478,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkInTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZenParkIn.app/ZenParkIn";
 			};
 			name = Release;
@@ -489,6 +496,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkInUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ZenParkIn;
 			};
 			name = Debug;
@@ -500,6 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenparkin.ZenParkInUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ZenParkIn;
 			};
 			name = Release;

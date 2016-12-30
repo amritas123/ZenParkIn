@@ -26,16 +26,16 @@ import Foundation
 
 enum JSONValue {
   
-  case JSONObject([String:JSONValue])
-  case JSONArray([JSONValue])
-  case JSONString(String)
-  case JSONNumber(NSNumber)
-  case JSONBool(Bool)
-  case JSONNull
+  case jsonObject([String:JSONValue])
+  case jsonArray([JSONValue])
+  case jsonString(String)
+  case jsonNumber(NSNumber)
+  case jsonBool(Bool)
+  case jsonNull
 
   var object: [String:JSONValue]? {
     switch self {
-    case .JSONObject(let value):
+    case .jsonObject(let value):
       return value
     default:
       return nil
@@ -44,7 +44,7 @@ enum JSONValue {
   
   var array: [JSONValue]? {
     switch self {
-    case .JSONArray(let value):
+    case .jsonArray(let value):
       return value
     default:
       return nil
@@ -53,7 +53,7 @@ enum JSONValue {
   
   var string: String? {
     switch self {
-    case .JSONString(let value):
+    case .jsonString(let value):
       return value
     default:
       return nil
@@ -62,8 +62,8 @@ enum JSONValue {
   
   var integer: Int? {
     switch self {
-    case .JSONNumber(let value):
-      return value.integerValue
+    case .jsonNumber(let value):
+      return value.intValue
     default:
       return nil
     }
@@ -71,7 +71,7 @@ enum JSONValue {
   
   var double: Double? {
     switch self {
-    case .JSONNumber(let value):
+    case .jsonNumber(let value):
       return value.doubleValue
     default:
       return nil
@@ -80,9 +80,9 @@ enum JSONValue {
   
   var bool: Bool? {
     switch self {
-    case .JSONBool(let value):
+    case .jsonBool(let value):
       return value
-    case .JSONNumber(let value):
+    case .jsonNumber(let value):
       return value.boolValue
     default:
       return nil
@@ -92,7 +92,7 @@ enum JSONValue {
   subscript(i: Int) -> JSONValue? {
     get {
       switch self {
-      case .JSONArray(let value):
+      case .jsonArray(let value):
         return value[i]
       default:
         return nil
@@ -103,7 +103,7 @@ enum JSONValue {
   subscript(key: String) -> JSONValue? {
     get {
       switch self {
-      case .JSONObject(let value):
+      case .jsonObject(let value):
         return value[key]
       default:
         return nil
@@ -111,36 +111,36 @@ enum JSONValue {
     }
   }
   
-  static func fromObject(object: AnyObject) -> JSONValue? {
+  static func fromObject(_ object: AnyObject) -> JSONValue? {
     switch object {
     case let value as NSString:
-      return JSONValue.JSONString(value as String)
+      return JSONValue.jsonString(value as String)
     case let value as NSNumber:
-      return JSONValue.JSONNumber(value)
+      return JSONValue.jsonNumber(value)
     case let value as NSNull:
-      return JSONValue.JSONNull
+      return JSONValue.jsonNull
     case let value as NSDictionary:
       var jsonObject: [String:JSONValue] = [:]
-      for (k, v): (AnyObject, AnyObject) in value {
+      for (k, v): (Any, Any) in value {
         if let k = k as? NSString {
-          if let v = JSONValue.fromObject(v) {
+          if let v = JSONValue.fromObject(v as AnyObject) {
             jsonObject[k as String] = v
           } else {
             return nil
           }
         }
       }
-      return JSONValue.JSONObject(jsonObject)
+      return JSONValue.jsonObject(jsonObject)
     case let value as NSArray:
       var jsonArray: [JSONValue] = []
       for v in value {
-        if let v = JSONValue.fromObject(v) {
+        if let v = JSONValue.fromObject(v as AnyObject) {
           jsonArray.append(v)
         } else {
           return nil
         }
       }
-      return JSONValue.JSONArray(jsonArray)
+      return JSONValue.jsonArray(jsonArray)
     default:
       return nil
     }

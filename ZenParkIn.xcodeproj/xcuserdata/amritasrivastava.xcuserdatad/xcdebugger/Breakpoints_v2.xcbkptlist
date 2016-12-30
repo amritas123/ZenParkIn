@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZenParkIn/ViewController.swift"
-            timestampString = "497769347.65459"
+            timestampString = "504831124.027022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "loadInitialData()"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "HandleMapSearch"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZenParkIn/ViewController.swift"
-            timestampString = "497769347.65459"
+            timestampString = "504831124.027022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "loadInitialData()"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "HandleMapSearch"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZenParkIn/ViewController.swift"
-            timestampString = "497769347.65459"
+            timestampString = "504831124.027022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "searchLocation()"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "HandleMapSearch"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZenParkIn/ViewController.swift"
-            timestampString = "497769347.65459"
+            timestampString = "504831124.027022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "dropPinZoomIn(_:)"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "HandleMapSearch"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,12 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZenParkIn/ViewController.swift"
-            timestampString = "497769347.65459"
+            timestampString = "504831124.027022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "dropPinZoomIn(_:)"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "HandleMapSearch"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -106,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZenParkIn/ViewController.swift"
-            timestampString = "497769347.65459"
+            timestampString = "504831124.027022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "loadInitialData()"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "HandleMapSearch"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZenParkIn/ViewController.swift"
-            timestampString = "497769347.65459"
+            timestampString = "504831124.027022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "searchLocation()"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "HandleMapSearch"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -138,12 +138,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZenParkIn/ViewController.swift"
-            timestampString = "491356733.99777"
+            timestampString = "504831124.027022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "HandleMapSearch"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -154,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZenParkIn/ViewController.swift"
-            timestampString = "491357175.684865"
+            timestampString = "504831124.027022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "addBoundry(_:)"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "HandleMapSearch"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -170,12 +170,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZenParkIn/ViewController.swift"
-            timestampString = "491357245.078286"
+            timestampString = "504831124.027022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "addBoundry(_:)"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "HandleMapSearch"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

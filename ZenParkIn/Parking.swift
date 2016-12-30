@@ -25,7 +25,7 @@ class Parking: NSObject, MKAnnotation {
         super.init()
     }
     
-    class func fromJSON(json: [JSONValue]) -> Parking? {
+    class func fromJSON(_ json: [JSONValue]) -> Parking? {
         // 1
         var title: String
         if let titleOrNil = json[8].string {
@@ -64,11 +64,11 @@ class Parking: NSObject, MKAnnotation {
     func pinColor() -> UIColor  {
         switch title {
         case "Private"?:
-            return UIColor.magentaColor()
+            return UIColor.magenta
         case "Search Location"?:
-            return UIColor.cyanColor()
+            return UIColor.cyan
         default:
-            return UIColor.blueColor()
+            return UIColor.blue
         }
     }
 

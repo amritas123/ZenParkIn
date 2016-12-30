@@ -12,12 +12,12 @@ import MapKit
 extension ViewController: MKMapViewDelegate {
     
     // 1
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
         if let annotation = annotation as? Parking {
             let identifier = "pin"
             var view: MKPinAnnotationView
-            if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
+            if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
                 as? MKPinAnnotationView { // 2
                 dequeuedView.annotation = annotation
                 view = dequeuedView
@@ -29,8 +29,8 @@ extension ViewController: MKMapViewDelegate {
             view.pinTintColor = annotation.pinColor()
             
             let smallSquare = CGSize(width: 60, height: 60)
-            let button = UIButton(frame: CGRect(origin: CGPointZero, size: smallSquare))
-            button.setBackgroundImage(UIImage(named: "Car"), forState: .Normal)
+            let button = UIButton(frame: CGRect(origin: CGPoint.zero, size: smallSquare))
+            button.setBackgroundImage(UIImage(named: "Car"), for: UIControlState())
             //button.addTarget(self, action: #selector(self.getDirections), forControlEvents: .TouchUpInside)
             view.leftCalloutAccessoryView = button
             return view
@@ -39,12 +39,12 @@ extension ViewController: MKMapViewDelegate {
         return nil
     }
     
-    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView,
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                  calloutAccessoryControlTapped control: UIControl) {
         print("Opening Maps")
         let location = view.annotation as! Parking
         let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
-        location.mapItem().openInMapsWithLaunchOptions(launchOptions)
+        location.mapItem().openInMaps(launchOptions: launchOptions)
     }
  
 }
