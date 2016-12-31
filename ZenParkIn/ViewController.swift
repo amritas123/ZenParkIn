@@ -21,18 +21,26 @@ class ViewController: UIViewController, UISearchBarDelegate {
     let regionRadius: CLLocationDistance = 1000
     var locationManager = CLLocationManager()
     
+    // Controller-level scope to keep the UISearchController in memory after it’s created
     var resultSearchController:UISearchController? = nil
     var selectedPin:MKPlacemark? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        // set initial location
+        // set location manager
+        // Delegate methods are used to handle responses asynchronously
         locationManager.delegate = self
+        
+        // override default accuracy level with explicit value. Or use something less accurate like kCLLocationAccuracyHundredMeters to conserve battery life
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        // Triggers one-time location permission dialog
         locationManager.requestWhenInUseAuthorization()
+        
+        // Triggers a one-time location request
         locationManager.requestLocation()
+        
         mapView.delegate = self
         
         // show parking on map
@@ -72,6 +80,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
         resultSearchController = UISearchController(searchResultsController: locationSearchTable)
         resultSearchController?.searchResultsUpdater = locationSearchTable
         
+        // Set up the search bar
         let searchBar = resultSearchController!.searchBar
         searchBar.sizeToFit()
         searchBar.placeholder = "Search for places"
@@ -144,6 +153,7 @@ extension ViewController : CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
+            // Zoom to the user’s current location
             let span = MKCoordinateSpanMake(0.006, 0.006)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
             mapView.setRegion(region, animated: true)
